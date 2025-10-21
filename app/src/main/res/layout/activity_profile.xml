@@ -1,37 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/well"
+    tools:context=".ProfileActivity">
 
-    <EditText
-        android:id="@+id/edtNama"
-        android:hint="Nama Lengkap"
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/edtTanggal"
-        android:hint="Tanggal Lahir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/pp"
+            android:scaleType="centerCrop" />
 
-    <EditText
-        android:id="@+id/edtAlamat"
-        android:hint="Alamat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp" />
+        <Button
+            android:id="@+id/btnGantiFoto"
+            android:background="@drawable/fraame"
+            android:text="@string/ganti_foto"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="60dp" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:text="Logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtNamaLengkap"
+            android:hint="@string/nama_lengkap"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/edtTanggalLahir"
+            android:hint="@string/tanggal_lahir"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:autofillHints="birthday" />
+
+        <EditText
+            android:id="@+id/edtHobi"
+            android:hint="@string/hobi"
+            android:enabled="false"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:background="@drawable/button"
+            android:text="@string/logout"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgKena"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/kena"
+            android:contentDescription="@string/logo_kena" />
+
+    </LinearLayout>
+</ScrollView>

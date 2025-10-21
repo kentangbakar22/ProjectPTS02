@@ -1,26 +1,53 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/bg_gradient"
+    android:background="@drawable/well"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="Logo Aplikasi"
+        android:src="@drawable/kena" />
+
     <TextView
-        android:text="PILIH UNTUK MEMBUAT CATATAN"
-        android:textSize="18sp"
+        android:layout_width="337dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="30dp"
-        android:layout_height=""
-        android:layout_width="" />
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="PILIH UNTUK MEMBUAT CATATAN"
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/btnDiary"
+        android:layout_width="341dp"
+        android:layout_height="113dp"
+        android:background="@drawable/fraame"
         android:text="DIARY"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textSize="20dp"
+        tools:ignore="InvalidId" />
 
     <Button
         android:id="@+id/btnHarian"
-        android:text="HARIAN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fraame"
+        android:textSize="20dp"
+        android:text="HARIAN" />
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fraame"
+        android:textSize="20dp"
+        android:text="Profil" />
 </LinearLayout>

@@ -1,32 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center_vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/well" >
+
+    <TextView
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="PILIH UNTUK MEMBUAT CATATAN"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edtTitle"
         android:autofillHints=""
+        android:background="@color/white"
         android:hint="Judul Catatan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp "
+        android:layout_height="50dp"
         android:layout_marginBottom="16dp" />
 
     <EditText
-        android:id="@+id/edtContent"
-        android:hint="Isi Catatan"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:id="@+id/edtNoteContent"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:layout_marginBottom="24dp"
         android:gravity="top"
-        android:inputType="textMultiLine"
-        android:layout_marginBottom="24dp" />
+        android:hint="Isi Catatan"
+        android:inputType="textMultiLine" />
 
     <Button
         android:id="@+id/btnSave"
-        android:text="Simpan Catatan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="325dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:background="@drawable/fraame"
+        android:text="Simpan Catatan" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="168dp"
+        android:layout_height="141dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="Logo Aplikasi"
+        android:src="@drawable/kena" />
 </LinearLayout>

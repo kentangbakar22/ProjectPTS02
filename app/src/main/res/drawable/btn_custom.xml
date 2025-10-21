@@ -4,7 +4,7 @@
     <!-- Background gambar -->
     <item>
         <bitmap
-            android:src="@drawable/button.jpg"
+            android:src="@drawable/fraame"
             android:gravity="center"
             android:tileMode="disabled" />
     </item>

@@ -1,19 +1,28 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="40dp"
-    android:background="@drawable/bg_gradient"
+    android:background="@drawable/well"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:src="@drawable/logo_kena"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:contentDescription="@string/app_name"
+        android:layout_width="261dp"
+        android:layout_height="365dp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:scaleType="fitCenter" />
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kena" />
+
+    <Button
+        android:id="@+id/btnMulai"
+        android:layout_width="319dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fraame"
+        android:text="Mulai" />
 
 </LinearLayout>
